@@ -45,7 +45,10 @@ public class Paciente {
     public void setPrioridad(String prioridad) {
         this.prioridad = prioridad;
     }
-    
 
+    @Override
+    public String toString() {
+        return "Paciente{" + "nombre=" + nombre + ", descripcion=" + descripcion + ", prioridad=" + prioridad + '}';
+    }
     
 }
