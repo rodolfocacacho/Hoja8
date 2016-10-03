@@ -51,14 +51,14 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>{
         return 2*(i+1);
     }
     
-	//Metodos para mover los nodos
+	// Metodos para ordenar por prioridad
     protected void percolateUp(int leaf)
     //pre: 0<=leaf<size
     //post: moves node at index lead up to appropiate position
     {
         int parent = parent(leaf);
 	E value = data.get(leaf);
-	//Aqui se compara el codigo ASCII
+	//Se compara el nivel de prioridad de cada paciente
 	while(leaf>0 && (value.compareTo(data.get(parent))<0)){
             data.set(leaf, data.get(parent));
             leaf = parent;
@@ -128,21 +128,18 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>{
 
     @Override
     public boolean isEmpty()
-    // TODO Auto-generated method stub
     {
         return false;
     }
 
     @Override
     public int size()
-    // TODO Auto-generated method stub
     {	
         return data.size();
     }
 
     @Override
     public void clear()
-    // TODO Auto-generated method stub
     {
     
     }
