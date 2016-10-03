@@ -36,6 +36,7 @@ public static void main(String[] args){
 	int i = 0;
 	Paciente actual;
 	String imprimir;
+	System.out.println("La lista de pacientes segun prioridad es la siguiente: ");
 	for (i, i<x, i++){
 		actual = pacientes[i];
 		imprimir = "Paciente "+(i+1)+" "+actual.toString();
