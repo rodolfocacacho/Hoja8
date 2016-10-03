@@ -8,7 +8,7 @@
  *
  * @author RodolfoC
  */
-public class Paciente {
+public class Paciente implements Comparable<Paciente>{
     
     private String nombre;
     private String descripcion;
@@ -49,6 +49,13 @@ public class Paciente {
     @Override
     public String toString() {
         return "Nombre: " + nombre + ", Descripcion: " + descripcion + ", Prioridad: " + prioridad;
+    }
+    
+    //CompareTo para los codigos ASCII dentro de los metodos del VectorHeap
+    @Override
+    public int compareTo(Paciente pacienteT) {
+	String temp=((Paciente)pacienteT).getPrioridad();
+	return prioridad.compareTo(temp);
     }
     
 }
