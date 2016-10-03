@@ -29,4 +29,16 @@ public static void main(String[] args){
 			System.out.println("Ha ocurrido un error");
 	}
 }
+	//Crear el vectorHeap
+	VectorHeap<Paciente> pacientes = new VectorHeap<Paciente>(VecPacientes);
+	//Inicializacion de variables a utilizar en el for
+	int x = pacientes.size();
+	int i = 0;
+	Paciente actual;
+	String imprimir;
+	for (i, i<x, i++){
+		actual = pacientes[i];
+		imprimir = "Paciente "+(i+1)+" "+actual.toString();
+		System.out.println(imprimir);
+	}
 }
