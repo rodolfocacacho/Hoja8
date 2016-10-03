@@ -4,8 +4,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Vector;
 
-public static void main(String[] args) throws FileNotFoundException {
-        System.out.println("Bienvenido al programa\n");
+public static void main(String[] args){
+	
+	System.out.println("Bienvenido al programa\n");
 	//Leer archivo de texto
 	String fileName = "pacientes.txt";
 	BufferedReader in = new BufferedReader(new FileReader(fileName));
@@ -13,7 +14,6 @@ public static void main(String[] args) throws FileNotFoundException {
 	String [] subStrings;
 	//Vector que contendra todos los objetos pacientes
 	Vector<Paciente> VecPacientes = new Vector<Paciente>();
-        String linea;
 	try {
 		//Mientras haya una linea de paciente continua leyendo el archivo
 		while ((linea = in.readLine()) != null) {
@@ -26,5 +26,4 @@ public static void main(String[] args) throws FileNotFoundException {
 			//Error si hay algun problema con el ingreso de datos
 			System.out.println("Ha ocurrido un error");
 	}
-	
 }
