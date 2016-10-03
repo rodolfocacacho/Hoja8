@@ -1,4 +1,6 @@
 Juan Perez, fractura de pierna, C
-Maria Ramirez, apendicitis, A
+Maria Ramirez, apendicitis, B
 Lorenzo Toledo, chikunguya, E
-Carmen Sarmientos, dolores de parto, B
+Carmen Sarmientos, dolores de parto, B
+Alfredo Orellana, herida de bala, A
+Javier Bran, ataques epilepticos, B

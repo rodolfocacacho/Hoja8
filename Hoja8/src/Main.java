@@ -6,11 +6,12 @@ import java.util.Vector;
 
 public class Main {
 
-public static void main(String[] args){
+public static void main(String[] args) throws FileNotFoundException{
 	
-	System.out.println("Bienvenido al programa\n");
+        // Bienvenida al programa
+	System.out.println("¡Bienvenido! A continuación leeremos la lista de espera y la ordenaremos por prioridad.\n");
         
-	//Leer archivo de texto
+	//Se declaran variables para leer el archivo con los pacientes
 	String fileName = "pacientes.txt";
 	BufferedReader in = new BufferedReader(new FileReader(fileName));
 	//Se crea para el split
@@ -32,7 +33,7 @@ public static void main(String[] args){
             System.out.println("Ha ocurrido un error");
 	}
         
-        //Crear el vectorHeap
+        //Se crea el VectorHeap y se van quitando desde la raiz
 	VectorHeap<Paciente> pacientes = new VectorHeap<Paciente>(listaEspera);
 	//Inicializacion de variables a utilizar en el for
 	int count = pacientes.size();

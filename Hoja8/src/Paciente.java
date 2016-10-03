@@ -10,10 +10,12 @@
  */
 public class Paciente implements Comparable<Paciente>{
     
+    // Se declaran las variables
     private String nombre;
     private String descripcion;
     private String prioridad;
 
+    // Constructor
     public Paciente(String nombre, String descripcion, String prioridad) {
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -21,7 +23,7 @@ public class Paciente implements Comparable<Paciente>{
     }
     
     
-
+    // Getters y Setters
     public String getNombre() {
         return nombre;
     }
@@ -51,7 +53,7 @@ public class Paciente implements Comparable<Paciente>{
         return "Nombre: " + nombre + ", Descripcion: " + descripcion + ", Prioridad: " + prioridad;
     }
     
-    //CompareTo para los codigos ASCII dentro de los metodos del VectorHeap
+    //Se hace override a la funcion compareTo de Comparable
     @Override
     public int compareTo(Paciente pacienteT) {
 	String temp=((Paciente)pacienteT).getPrioridad();
